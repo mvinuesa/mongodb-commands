@@ -1,0 +1,18 @@
+# MongoDB-commands
+
+This projects is used for MongoDB commands
+
+## Download and documentation
+
+link:https://docs.mongodb.com/manual/reference/[MongoDB reference]
+
+## Commands
+
+### List all elements from a collection 
+
+  db.<collection>.find( {} )
+  
+### Count all elements from a collection 
+
+  db.<collection>.find( {} ).count()
+  
