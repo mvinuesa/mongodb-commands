@@ -6,13 +6,50 @@ This projects is used for MongoDB commands
 
 link:https://docs.mongodb.com/manual/reference/[MongoDB reference]
 
+
 ## Commands
 
-### List all elements from a collection 
+### *mongo* -> connect with mondo
 
-  db.<collection>.find( {} )
-  
-### Count all elements from a collection 
+----
+mongo <URL-CONNECTION>
+----
 
+### *db* -> change database
+
+----
+db <DATABASE-NAME>
+----
+
+### *show* -> show collections
+
+----
+show collections   
+----
+
+### *find* -> List all elements from a collection 
+
+----
+ db.<collection>.find( {} )
+----
+
+### *count* -> Count all elements from a collection 
+
+----
   db.<collection>.find( {} ).count()
-  
+----
+
+### *deleteMany* -> delete many documents
+
+----
+db.masterdata.deleteMany(<FILTER>)      
+----
+
+### *insertMany* -> insert many documents 
+
+----
+db.masterdata.insertMany([
+    {
+       <JSON-ARRAY>
+	}]);
+----
