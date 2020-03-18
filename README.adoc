@@ -42,13 +42,13 @@ show collections
 ### *deleteMany* -> delete many documents
 
 ----
-db.masterdata.deleteMany(<FILTER>)      
+db.<collection>.deleteMany(<FILTER>)      
 ----
 
 ### *insertMany* -> insert many documents 
 
 ----
-db.masterdata.insertMany([
+db.<collection>.insertMany([
     {
        <JSON-ARRAY>
 	}]);
